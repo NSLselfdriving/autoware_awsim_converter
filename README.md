@@ -18,3 +18,10 @@ colcon build --symlink-install
 source install/setup.bash
 ros2 run autoware_awsim_connect <node名>
 ```
+
+
+上記のノードをまとめて起動する場合は、ワークスペースで以下のようにlaunchファイルを実行します
+```bash
+ros2 launch autoware_awsim_connect connect_launch.py
+ros2 launch <パッケージ名> <launchファイル名>
+```
